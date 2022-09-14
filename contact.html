@@ -12,7 +12,7 @@
 
 		</header>
 		<!-- Table section -->
-		<section>
+		<section style="display:flex;justify-content:center;">
 			<fieldset>
 				<h2>Zuitt IT Solutions</h2>
 
@@ -46,75 +46,76 @@
 			</fieldset>
 		</section>
 		<!-- Form section -->
-		<section align="center" style="margin-top: 50px;">
+		<section style="margin-top: 50px;">
 
-			<h1>Contact Form</h1>
+			<h1 align="center">Contact Form</h1>
+			<div style="display:flex;justify-content:center;">
+				<form action="">
+						<label for="first_name">First Name:</label><br>
+						<input type="text" id="first_name" required autocomplete>
 
-			<form action="">
-					<label for="first_name">First Name:</label><br>
-					<input type="text" id="first_name" required autocomplete>
+						<br>
 
-					<br>
+						<label for="last_name">Last Name:</label><br>
+						<input type="text" id="last_name" required autocomplete>
 
-					<label for="last_name">Last Name:</label><br>
-					<input type="text" id="last_name" required autocomplete>
+						<br>
 
-					<br>
+						<label for="email">Email:</label><br>
+						<input type="email" id="email" required autocomplete>
 
-					<label for="email">Email:</label><br>
-					<input type="email" id="email" required autocomplete>
+						<br>
 
-					<br>
+						<label for="contact_number">Contact Number:</label><br>
+						<input type="number" id="contact_number" required autocomplete>
 
-					<label for="contact_number">Contact Number:</label><br>
-					<input type="number" id="contact_number" required autocomplete>
+						<br>
 
-					<br>
+						<label for="service_type">Service Type:</label><br>
+						<select name="service_type" id="service_type" required>
+							<option value="front-end-programming">Front End Programming</option>
+							<option value="back-end-programming">Back End Programming</option>
+						</select>
 
-					<label for="service_type">Service Type:</label><br>
-					<select name="service_type" id="service_type" required>
-						<option value="front-end-programming">Front End Programming</option>
-						<option value="back-end-programming">Back End Programming</option>
-					</select>
+						<br>
 
-					<br>
+						<!-- Checkbox buttons -->
+						<label>Preferred Contact:</label>
+						<br>
 
-					<!-- Checkbox buttons -->
-					<label>Preferred Contact:</label>
-					<br>
+						<input type="checkbox" name="contact1" id="contact1" value="email">
+						<label for="contact1">Email</label>
 
-					<input type="checkbox" name="contact1" id="contact1" value="email">
-					<label for="contact1">Email</label>
+						<br>
 
-					<br>
+						<input type="checkbox" name="contact2" id="contact2" value="phone">
+						<label for="contact2">Phone</label>
 
-					<input type="checkbox" name="contact2" id="contact2" value="phone">
-					<label for="contact2">Phone</label>
+						<br>
 
-					<br>
+						<!-- Radio Buttons -->
+						<label>Package:</label>
+						<br>
+						<input type="radio" name="package" value="basic" id="package-type1">
+						<label for="package-type1">Basic</label>
 
-					<!-- Radio Buttons -->
-					<label>Package:</label>
-					<br>
-					<input type="radio" name="package" value="basic" id="package-type1">
-					<label for="package-type1">Basic</label>
+						<br>
 
-					<br>
+						<input type="radio" name="package" value="premium" id="package-type2">
+						<label for="package-type2">Premium</label>
 
-					<input type="radio" name="package" value="premium" id="package-type2">
-					<label for="package-type2">Premium</label>
+						<br>
 
-					<br>
+						<label for="message">Message</label><br>
+						<textarea id="message" cols="30" rows="10"></textarea required>
 
-					<label for="message">Message</label><br>
-					<textarea id="message" cols="30" rows="10"></textarea required>
+						<br>
 
-					<br>
-
-					
-					<button type="submit">Send Inquiry</button><br>
-					<button type="reset">Reset</button>
-				</form>
+						
+						<button type="submit">Send Inquiry</button><br>
+						<button type="reset">Reset</button>
+					</form>
+			</div>
 		</section>
 
 	</body>
